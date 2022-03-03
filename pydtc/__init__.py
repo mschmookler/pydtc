@@ -44,3 +44,5 @@ class DTC:
             return _dt.astimezone(self.tzinfo)
     
     def now(self):
+        """Return current time local to tzinfo."""
+        return datetime.now(tz=self.tzinfo)
